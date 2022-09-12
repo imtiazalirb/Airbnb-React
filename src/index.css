@@ -11,3 +11,22 @@ nav {
 .nav--logo {
   max-width: 100px;
 }
+
+.hero--section{
+  display: flex;
+  flex-direction: column;
+}
+
+.hero--image {
+  max-width: 800px;
+  align-self: center;
+  margin-top: 26px;
+}
+
+.hero--header {
+  margin-bottom: 16px;
+}
+
+.hero--text {
+  margin-top: 0;
+}
