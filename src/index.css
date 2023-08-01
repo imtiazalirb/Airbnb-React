@@ -20,6 +20,10 @@ nav {
   max-width: 100px;
 }
 
+.section {
+  padding: 20px;
+}
+
 .hero--section{
   display: flex;
   flex-direction: column;
@@ -39,14 +43,33 @@ nav {
   margin-top: 0;
 }
 
+/* ADD */
+.cards-list {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto;
+}
+
 .card {
   width: 175px;
   font-size: 12px;
-}
+  flex: 0 0 auto;
+  display: flex;            /* ADD */
+  flex-direction: column;   /* ADD */
+  position: relative;       /* ADD */
+} 
 
 .card--image {
   width: 100%;
   border-radius: 9px;
+  margin-bottom: 9px;
+}
+
+/* ADD */
+.card--title {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .star{
@@ -58,4 +81,9 @@ nav {
 .card--stats {
   display: flex;
   align-items: center;
+}
+
+/* ADD */
+.card--price {
+  margin-top: auto;
 }
